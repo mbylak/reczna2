@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --navy-dark: #1a3a5c;
+  --navy-medium: #234870;
+  --red-accent: #c8312a;
+  --red-hover: #a8261f;
+  --cream-bg: #f5ede0;
+  --white: #ffffff;
+  --gray-text: #6b7280;
+  --gray-light: #e5e7eb;
+}
+
+@theme inline {
+  --color-navy-dark: var(--navy-dark);
+  --color-navy-medium: var(--navy-medium);
+  --color-red-accent: var(--red-accent);
+  --color-red-hover: var(--red-hover);
+  --color-cream-bg: var(--cream-bg);
+  --color-gray-text: var(--gray-text);
+  --color-gray-light: var(--gray-light);
+  --font-sans: var(--font-inter);
+  --font-script: var(--font-caveat);
+}
+
+body {
+  background: var(--white);
+  color: var(--navy-dark);
+  font-family: var(--font-inter), sans-serif;
+}
+
+.script-font {
+  font-family: var(--font-caveat), cursive;
+}
+
+.hand-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.hand-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 58px;
+  height: 3px;
+  background: var(--red-accent);
+  border-radius: 999px;
+  transform: rotate(-1.5deg);
+}
+
+.section-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.section-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.boat-float {
+  animation: boatFloat 6s ease-in-out infinite;
+}
+
+@keyframes boatFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.button-hover {
+  transition:
+    transform 300ms ease,
+    background-color 300ms ease,
+    color 300ms ease,
+    border-color 300ms ease;
+}
+
+.button-hover:hover {
+  transform: scale(1.02);
+}
