@@ -34,8 +34,8 @@ export default function Header() {
             <Link
               key={item}
               href="#"
-              className={`text-[11px] font-semibold tracking-[0.1em] text-navy-dark transition-colors duration-300 hover:text-red-accent ${
-                index === 0 ? "relative after:absolute after:-bottom-2 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-red-accent" : ""
+              className={`marker-nav-link text-[11px] font-semibold tracking-[0.1em] text-navy-dark transition-colors duration-300 hover:text-red-accent ${
+                index === 0 ? "marker-active" : ""
               }`}
             >
               {item}

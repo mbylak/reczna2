@@ -38,18 +38,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="boat-float absolute bottom-[160px] right-[8%] hidden w-[360px] opacity-95 lg:block">
-        <svg viewBox="0 0 500 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="100" y="50" width="235" height="52" rx="3" fill="#f8fafc" stroke="#1a3a5c" strokeWidth="3" />
-          <rect x="124" y="30" width="66" height="20" fill="#f8fafc" stroke="#1a3a5c" strokeWidth="3" />
-          <line x1="170" y1="50" x2="170" y2="30" stroke="#1a3a5c" strokeWidth="3" />
-          <rect x="88" y="102" width="268" height="18" rx="8" fill="#f1f5f9" stroke="#1a3a5c" strokeWidth="3" />
-          <circle cx="134" cy="120" r="10" fill="#fff" stroke="#1a3a5c" strokeWidth="3" />
-          <circle cx="198" cy="120" r="10" fill="#fff" stroke="#1a3a5c" strokeWidth="3" />
-          <circle cx="262" cy="120" r="10" fill="#fff" stroke="#1a3a5c" strokeWidth="3" />
-          <path d="M54 132H442" stroke="#1a3a5c" strokeWidth="4" strokeLinecap="round" />
-        </svg>
-      </div>
     </section>
   );
 }
